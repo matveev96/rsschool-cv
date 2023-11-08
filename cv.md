@@ -1,7 +1,7 @@
 # **Aliaksandr Matsveyeu**
 
 ## Contacts
-* Telephone number: +375333709381
+* Telegram: @penzel
 * e-mail: sasha.matveev1996@gmail.com
 * Github account: https://github.com/matveev96
 * Discord: alex965156
