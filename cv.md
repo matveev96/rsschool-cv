@@ -6,17 +6,17 @@
 * Github account: https://github.com/matveev96
 * Discord: alex965156
 
-## About me:
+## Summary:
 I'm 28. My goal is to achieve high results in my studies on the course, and in the future to find a dream job and engage in interesting projects together with a team of like-minded people. My strengths are perseverance and determination, concentration in educational projects and thirst for learning new material.
 
-## Skills (Basic knowlage):
+## Skills:
 * Git, GitHub
 * HTML5, CSS
 * JavaScript
 * Figma
 * VS Code
 
-## Code example:
+## Code:
 **JavaScript-code:**
 *DESCRIPTION Kata from CODEWARS:*
 *As part of this kata, you need to find the length of the sub-array that begins and ends with the specified number.*
