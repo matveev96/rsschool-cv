@@ -1,5 +1,88 @@
-.hello {
+/* open-sans-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./assets/fonts/open-sans-v40-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+/* poppins-900 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    src: url('./assets/fonts/poppins-v21-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    min-height: 100vh;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0;
+
+    font-family: 'Open Sans';
+
+    background-color: #F8F4EB;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.nav-link {
+    position: relative;
     font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: brown;
+
+    padding: 0 20px;
+    line-height: 50px;
+    text-decoration: none;
+    color: black;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.nav-link:hover {
+    opacity: .6;
+}
+
+.nav-link:hover::after {
+    content: "";
+
+    position: absolute;
+    left: 50%;
+    top: 30px;
+    height: 2px;
+    width: 60px;
+    transform: translateX(-50%);
+    background-color: #0C0C0E;
+    
+    
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
