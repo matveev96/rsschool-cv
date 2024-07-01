@@ -5,7 +5,7 @@
     font-style: normal;
     font-weight: 400;
     src: url('./assets/fonts/open-sans-v40-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
+}
 
 /* open-sans-800 - latin */
 @font-face {
@@ -14,7 +14,7 @@
     font-style: normal;
     font-weight: 800;
     src: url('./assets/fonts/open-sans-v40-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
+}
 
 /* poppins-900 - latin */
 @font-face {
@@ -23,7 +23,16 @@
     font-style: normal;
     font-weight: 900;
     src: url('./assets/fonts/poppins-v21-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
+}
+
+/* press-start-2p-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Press Start 2P';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./assets/fonts/press-start-2p-v15-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
 
 html {
     scroll-behavior: smooth;
@@ -310,4 +319,169 @@ body {
     background-image: url("./assets/svg/discord.svg");
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.skills-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 50%;
+    margin-top: -50px;
+}
+
+.skills-title {
+    width: 250px;
+    height: 50px;
+    margin: 0 0 -60px 100px;
+    text-align: center;
+    z-index: 2;
+
+    line-height: 2.2em;
+    letter-spacing: 1.5px;
+    color: white;
+
+    background-color: #32A842;
+    border-radius: 20px;
+    border: 2px solid black;
+    box-shadow: 10px 10px black;
+}
+
+.skills-list {
+    width: 400px;
+    height: 400px;
+    margin-top: -20px;
+    margin-left: 40px;
+    padding-top: 120px;
+
+    line-height: 2.2em;
+    letter-spacing: 1.5px;
+    color: black;
+    list-style: none;
+
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    border: 2px solid black;
+    box-shadow: 10px 10px black;
+}
+
+.skills-item {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 10px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.label {
+    width: 160px;
+    margin: 0;
+}
+
+.circles {
+    display: flex;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+
+.circle-code {
+    margin-right: 10px;
+    margin-top: 15px;
+}
+
+.circle-code:first-child {
+    margin-left: 15px;
+}
+
+.git-circle {
+    background-color: #ff99cc;
+}
+.html-circle {
+    background-color: #66cc66;
+}
+.js-circle {
+    background-color: #ff9933;
+}
+
+.figma-circle {
+    background-color: #ff99cc;
+}
+
+.vs-circle {
+    background-color: #66cc66;
+}
+
+.close {
+    background-color: #FF605C;
+}
+
+.minimise {
+    background-color: #FFBD44;
+}
+
+.maximise {
+    background-color: #00CA4E;
+}
+
+.empty {
+    background-color: #ffffff;
+    border: 1px solid #000000;
+}
+
+.code-section {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 40px;
+}
+
+.code-title {
+    position: relative;
+    letter-spacing: 1.5px;
+    margin-left: 10px;
+}
+
+.code-title::before {
+    content: "";
+    position: absolute;
+    left: -30px;
+    top: -10px;
+    height: 50px;
+    width: 50px;
+    transform: translateX(-50%);
+    background-image: url("./assets/svg/atom.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.solution-code {
+    width: 700px;
+    height: 700px;
+    margin-left: -50px;
+
+    line-height: 2.2em;
+    letter-spacing: 1.5px;
+    color: white;
+    list-style: none;
+
+    background-color: black;
+    border-radius: 20px;
+
+}
+
+.code {
+    font-family: 'Press Start 2P';
+    font-size: 9px;
+}
+
+.pre {
+    margin: 0 auto;
 }
