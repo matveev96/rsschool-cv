@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aliaksandr Matsveyeu</title>
+    <title>CV Alex</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="assets/favicon.ico">
 </head>
@@ -54,9 +54,9 @@
                 <li class="skills-item">
                     <h3 class="label">Git, GitHub</h3>
                     <div class="circles">
-                        <div class="circle git-circle"></div>
-                        <div class="circle git-circle"></div>
-                        <div class="circle empty"></div>
+                        <div class="circle orange"></div>
+                        <div class="circle orange"></div>
+                        <div class="circle orange"></div>
                         <div class="circle empty"></div>
                         <div class="circle empty"></div>
                     </div>
@@ -64,9 +64,9 @@
                 <li class="skills-item">
                     <h3 class="label">HTML5, CSS</h3>
                     <div class="circles">
-                        <div class="circle html-circle"></div>
-                        <div class="circle html-circle"></div>
-                        <div class="circle html-circle"></div>
+                        <div class="circle orange"></div>
+                        <div class="circle orange"></div>
+                        <div class="circle orange"></div>
                         <div class="circle empty"></div>
                         <div class="circle empty"></div>
                     </div>
@@ -74,8 +74,18 @@
                 <li class="skills-item">
                     <h3 class="label">JavaScript</h3>
                     <div class="circles">
-                        <div class="circle js-circle"></div>
-                        <div class="circle js-circle"></div>
+                        <div class="circle red"></div>
+                        <div class="circle red"></div>
+                        <div class="circle empty"></div>
+                        <div class="circle empty"></div>
+                        <div class="circle empty"></div>
+                    </div>
+                </li>
+                <li class="skills-item">
+                    <h3 class="label">Python</h3>
+                    <div class="circles">
+                        <div class="circle red"></div>
+                        <div class="circle red"></div>
                         <div class="circle empty"></div>
                         <div class="circle empty"></div>
                         <div class="circle empty"></div>
@@ -84,20 +94,20 @@
                 <li class="skills-item">
                     <h3 class="label">Figma</h3>
                     <div class="circles">
-                        <div class="circle figma-circle"></div>
-                        <div class="circle figma-circle"></div>
-                        <div class="circle figma-circle"></div>
-                        <div class="circle figma-circle"></div>
+                        <div class="circle orange"></div>
+                        <div class="circle orange"></div>
+                        <div class="circle orange"></div>
+                        <div class="circle empty"></div>
                         <div class="circle empty"></div>
                     </div>
                 </li>
                 <li class="skills-item">
                     <h3 class="label">VS Code</h3>
                     <div class="circles">
-                        <div class="circle vs-circle"></div>
-                        <div class="circle vs-circle"></div>
-                        <div class="circle vs-circle"></div>
-                        <div class="circle vs-circle"></div>
+                        <div class="circle green"></div>
+                        <div class="circle green"></div>
+                        <div class="circle green"></div>
+                        <div class="circle green"></div>
                         <div class="circle empty"></div>
                     </div>
                 </li>
@@ -115,7 +125,7 @@
                 <pre class="pre"><code class="code">
     // Find the length of the sub-array that begins 
     and ends with the specified number
-    
+
     // JavaScript-code:
     let lengthOfSequence = function (arr, n) {
         let indices = [];
@@ -125,7 +135,7 @@
             idx = arr.indexOf(n, idx + 1);
         };
         if (indices.length === 2) {
-            return indices[indices.length - 1] - indices[0] + 1;
+            return indices[indices.length-1]-indices[0] + 1;
         } else {
             return 0;
         };
@@ -134,18 +144,31 @@
             </div>
         </section>
 
-        <!-- <section class="section courses-section" id="courses">
-            <h2 class="section-title"></h2>
-        </section>
-        <section class="section projects-section" id="projects">
-            <h2 class="section-title"></h2>
-        </section>
-        <section class="section education-section" id="education">
-            <h2 class="section-title"></h2>
+        <section class="section courses-section" id="courses">
+            <h2 class="section-title courses-title">Courses</h2>
+            <ul class="courses-list">
+                <li class="courses-item">Skyeng - Pre-intermediate course (English)</li>
+                <li class="courses-item">freeCodeCamp - JavaScript Algorithms and Data Structures</li>
+                <li class="courses-item">freeCodeCamp - Responsive Web Design</li>
+                <li class="courses-item">Hexlet - Layout tools and techniques</li>
+                <li class="courses-item">Hexlet - Fundamentals of programming</li>
+            </ul>
         </section>
 
-        <section class="section languages-section" id="languages">
-            <h2 class="section-title"></h2>
+        <section class="section projects-section" id="projects">
+            <h2 class="section-title projects-title">Projects</h2>
+            <div class="projects">
+                <div class="project-item" onclick="window.open('https://github.com/matveev96/brain_games', '_blank')">Brain Games: console game written in Python</div>
+                <div class="project-item" onclick="window.open('https://github.com/matveev96/library_rs', '_blank')">Library RS: Web-application written in HTML, CSS and JS</div>
+            </div>
+        </section>
+        <section class="section education-section" id="education" onclick="window.open('https://belstu.by/', '_blank')">
+            <h2 class="section-title education-title">Education</h2>
+            <h3 class="education-item">Belarusian state technological university <br> Organic Substances Technology Faculty</h3>
+        </section>
+
+        <!-- <section class="section languages-section" id="languages">
+            <h2 class="section-title">Languages</h2>
         </section> -->
     </main>
 
