@@ -118,6 +118,7 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 50px;
+    margin-left: 50px;
     width: 100%;
 }
 
@@ -128,6 +129,21 @@ body {
     border-radius: 50px;
     border: 10px solid black;
     box-shadow: 10px 10px black;
+}
+
+.name-title {
+    position: relative;
+}
+
+.name-title::after {
+    position: absolute;
+    content: "";
+    background-image: url(./assets/svg/sun.svg);
+    width: 300px;
+    height: 300px;
+    z-index: -1;
+    margin-left: -200px;
+    margin-top: -250px;
 }
 
 .profile-information {
@@ -176,7 +192,8 @@ body {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
-    letter-spacing: 1.5px
+    letter-spacing: 1.5px;
+    line-height: 2em;
 }
 
 .summary-title {
@@ -202,8 +219,14 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 50%;
+    margin-left: 50px;
     margin-top: 50px;
+
+    transition: 0.4s;
+}
+
+.contacts-section:hover {
+    transform: scale(1.1);
 }
 
 .contacts-title {
@@ -239,7 +262,6 @@ body {
     border-radius: 20px;
     border: 2px solid black;
     box-shadow: 10px 10px black;
-
 }
 
 .contact-item {
@@ -325,8 +347,12 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: 50%;
-    margin-top: -50px;
+
+    transition: 0.4s;
+}
+
+.skills-section:hover {
+    transform: scale(1.1);
 }
 
 .skills-title {
@@ -351,7 +377,7 @@ body {
     height: 400px;
     margin-top: -20px;
     margin-left: 40px;
-    padding-top: 120px;
+    padding-top: 100px;
 
     line-height: 2.2em;
     letter-spacing: 1.5px;
@@ -401,25 +427,14 @@ body {
     margin-left: 15px;
 }
 
-.git-circle {
-    background-color: #ff99cc;
-}
-.html-circle {
+.green {
     background-color: #66cc66;
 }
-.js-circle {
+.orange {
     background-color: #ff9933;
 }
 
-.figma-circle {
-    background-color: #ff99cc;
-}
-
-.vs-circle {
-    background-color: #66cc66;
-}
-
-.close {
+.red, .close {
     background-color: #FF605C;
 }
 
@@ -439,14 +454,15 @@ body {
 .code-section {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    margin-left: 110px;
     margin-top: 40px;
 }
 
 .code-title {
     position: relative;
     letter-spacing: 1.5px;
-    margin-left: 10px;
+    margin-left: 50px;
+    margin-bottom: 30px;
 }
 
 .code-title::before {
@@ -457,16 +473,14 @@ body {
     height: 50px;
     width: 50px;
     transform: translateX(-50%);
-    background-image: url("./assets/svg/atom.svg");
+    background-image: url("./assets/svg/code.svg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .solution-code {
-    width: 700px;
+    width: 650px;
     height: 700px;
-    margin-left: -50px;
-
     line-height: 2.2em;
     letter-spacing: 1.5px;
     color: white;
@@ -484,4 +498,186 @@ body {
 
 .pre {
     margin: 0 auto;
+}
+
+.courses-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: -350px;
+
+    transition: 0.4s;
+}
+
+.courses-section:hover {
+    transform: scale(1.1);
+}
+.courses-title {
+    width: 250px;
+    height: 50px;
+    margin: 0 0 -60px 100px;
+    text-align: center;
+    z-index: 2;
+
+    line-height: 2.2em;
+    letter-spacing: 1.5px;
+    color: white;
+
+    background-color: #ff9933;
+    border-radius: 20px;
+    border: 2px solid black;
+    box-shadow: 10px 10px black;
+}
+
+.courses-list {
+    width: 400px;
+    height: 500px;
+    margin-left: 40px;
+    margin-top: -20px;
+    padding-top: 120px;
+
+    line-height: 1.5em;
+    letter-spacing: 1.5px;
+    color: black;
+    list-style: none;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    border: 2px solid black;
+    box-shadow: 10px 10px black;
+}
+
+.courses-item {
+    width: 300px;
+    margin-bottom: 20px;
+    position: relative;
+    margin-left: 40px;
+}
+
+.courses-item::before {
+    content: "";
+    position: absolute;
+    left: -30px;
+    height: 30px;
+    width: 30px;
+    transform: translateX(-50%);
+    background-image: url("./assets/svg/done.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.projects-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 110px;
+    margin-top: 50px;
+}
+
+.projects-title {
+    width: 250px;
+    height: 50px;
+    margin-left: 165px;
+    margin-bottom: 20px;
+    text-align: center;
+
+    line-height: 2.2em;
+    letter-spacing: 1.5px;
+    color: white;
+
+    background-color: #EA759F;
+    border-radius: 20px;
+    border: 2px solid black;
+    box-shadow: 10px 10px black;
+}
+
+.project-item {
+    width: 650px;
+    height: 50px;
+    margin-bottom: 20px;
+    padding-left: 40px;
+    cursor: pointer;
+
+
+    line-height: 2.5em;
+    letter-spacing: 1.5px;
+    color: black;
+    list-style: none;
+    
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    border: 2px solid black;
+    box-shadow: 10px 10px black;
+
+    transition: 0.4s;
+}
+
+.project-item:hover {
+    box-shadow: 10px 10px #ff9933;
+}
+
+.education-title {
+    position: relative;
+    letter-spacing: 1.5px;
+    margin-left: 55px;
+}
+
+.education-title::before {
+    content: "";
+    position: absolute;
+    left: -30px;
+    top: -10px;
+    height: 50px;
+    width: 50px;
+    transform: translateX(-50%);
+    background-image: url("./assets/svg/atom.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.education-item {
+    line-height: 1.5em;
+    letter-spacing: 1.5px;
+    transition: 0.4s;
+}
+
+.education-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+
+    margin-top: -100px;
+    z-index: 2;
+}
+
+.education-section:hover .education-item {
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    border: 2px solid black;
+    box-shadow: 10px 10px #66cc66;
+    padding: 10px;
+
+    
+}
+
+.education-section::after {
+    position: absolute;
+    content: "";
+    background-image: url(./assets/svg/chemistry.svg);
+    width: 300px;
+    height: 300px;
+    z-index: -1;
+    
+    margin-left: 200px;
+    opacity: 0.3;
 }
