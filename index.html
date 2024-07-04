@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aliaksandr Matsveyeu</title>
+    <title>CV Alex</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="assets/favicon.ico">
 </head>
@@ -35,18 +35,158 @@
 
         <section class="section summary-section" id="summary">
             <h2 class="section-title summary-title">Summary</h2>
-            <p class="summary-paragraph">I'm 28. My goal is to achieve high results in my studies on the course, and in the future to find a dream job and engage in interesting projects together with a team of like-minded people. My strengths are perseverance and determination, concentration in educational projects and thirst for learning new material.</p>
+            <p class="summary-paragraph">Hi, I'm Alex! My goal is to achieve high results in my studies on the course, and in the future to find a dream job and engage in interesting projects together with a team of like-minded people. I develop new projects, explore new trails on my bike, immerse myself in exciting video games and discover new places around the world, bringing enthusiasm and energy to everything I do.</p>
         </section>
 
         <section class="section contacts-section" id="contacts">
             <h2 class="section-title contacts-title">Contacts</h2>
             <ul class="contacts-list">
-                <li class="contact-item telegram-item">@penzlik</li>
-                <li class="contact-item gmail-item">sasha.matveev1996@gmail.com</li>
-                <li class="contact-item github-item">https://github.com/matveev96</li>
-                <li class="contact-item discord-item">alex965156</li>
+                <li class="contact-item telegram-item"><a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNirMfAVQoZlO5GljnYnxhEKmJLn8tUjnbkQ&usqp=CAU" class="contact-link" target="_blank">@penzlik</a></li>
+                <li class="contact-item gmail-item"><a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ56QEvioNbyrQIyafJ1ms-mo5TOK_zkC9Ylg&usqp=CAU" class="contact-link" target="_blank">sasha.matveev</a></li>
+                <li class="contact-item github-item"><a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7kT6v145H1R5KkLUExn9nndEzgjNP_knYug&usqp=CAU" class="contact-link" target="_blank">matveev96</a></li>
+                <li class="contact-item discord-item"><a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1lEgdJVSaI2qBq_yv7s0oEQ1ED-whQUr9rA&usqp=CAU" class="contact-link" target="_blank">alex965156</a></li>
+            </ul>
+        </section>
+
+        <section class="section skills-section" id="skills">
+            <h2 class="section-title skills-title">Skills</h2>
+            <ul class="skills-list">
+                <li class="skills-item">
+                    <h3 class="label">Git, GitHub</h3>
+                    <div class="circles">
+                        <div class="circle orange"></div>
+                        <div class="circle orange"></div>
+                        <div class="circle orange"></div>
+                        <div class="circle empty"></div>
+                        <div class="circle empty"></div>
+                    </div>
+                </li>
+                <li class="skills-item">
+                    <h3 class="label">HTML5, CSS</h3>
+                    <div class="circles">
+                        <div class="circle orange"></div>
+                        <div class="circle orange"></div>
+                        <div class="circle orange"></div>
+                        <div class="circle empty"></div>
+                        <div class="circle empty"></div>
+                    </div>
+                </li>
+                <li class="skills-item">
+                    <h3 class="label">JavaScript</h3>
+                    <div class="circles">
+                        <div class="circle red"></div>
+                        <div class="circle red"></div>
+                        <div class="circle empty"></div>
+                        <div class="circle empty"></div>
+                        <div class="circle empty"></div>
+                    </div>
+                </li>
+                <li class="skills-item">
+                    <h3 class="label">Python</h3>
+                    <div class="circles">
+                        <div class="circle red"></div>
+                        <div class="circle red"></div>
+                        <div class="circle empty"></div>
+                        <div class="circle empty"></div>
+                        <div class="circle empty"></div>
+                    </div>
+                </li>
+                <li class="skills-item">
+                    <h3 class="label">Figma</h3>
+                    <div class="circles">
+                        <div class="circle orange"></div>
+                        <div class="circle orange"></div>
+                        <div class="circle orange"></div>
+                        <div class="circle empty"></div>
+                        <div class="circle empty"></div>
+                    </div>
+                </li>
+                <li class="skills-item">
+                    <h3 class="label">VS Code</h3>
+                    <div class="circles">
+                        <div class="circle green"></div>
+                        <div class="circle green"></div>
+                        <div class="circle green"></div>
+                        <div class="circle green"></div>
+                        <div class="circle empty"></div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="section code-section" id="code">
+            <h2 class="section-title code-title">Code</h2>
+            <div class="solution-code">
+                <div class="circles">
+                    <div class="circle circle-code close"></div>
+                    <div class="circle circle-code minimise"></div>
+                    <div class="circle circle-code maximise"></div>
+                </div>
+                <pre class="pre"><code class="code">
+    // Find the length of the sub-array that begins 
+    and ends with the specified number
+
+    // JavaScript-code:
+    let lengthOfSequence = function (arr, n) {
+        let indices = [];
+        let idx = arr.indexOf(n);
+        while (idx != -1) {
+            indices.push(idx);
+            idx = arr.indexOf(n, idx + 1);
+        };
+        if (indices.length === 2) {
+            return indices[indices.length-1]-indices[0] + 1;
+        } else {
+            return 0;
+        };
+    };
+                </code></pre>
+            </div>
+        </section>
+
+        <section class="section courses-section" id="courses">
+            <h2 class="section-title courses-title">Courses</h2>
+            <ul class="courses-list">
+                <li class="courses-item">Skyeng - Pre-intermediate course (English)</li>
+                <li class="courses-item">freeCodeCamp - JavaScript Algorithms and Data Structures</li>
+                <li class="courses-item">freeCodeCamp - Responsive Web Design</li>
+                <li class="courses-item">Hexlet - Layout tools and techniques</li>
+                <li class="courses-item">Hexlet - Fundamentals of programming</li>
+            </ul>
+        </section>
+
+        <section class="section projects-section" id="projects">
+            <h2 class="section-title projects-title">Projects</h2>
+            <div class="projects">
+                <div class="project-item" onclick="window.open('https://github.com/matveev96/brain_games', '_blank')">Brain Games: console game written in Python</div>
+                <div class="project-item" onclick="window.open('https://github.com/matveev96/library_rs', '_blank')">Library RS: Web-application written in HTML, CSS and JS</div>
+            </div>
+        </section>
+        <section class="section education-section" id="education" onclick="window.open('https://belstu.by/', '_blank')">
+            <h2 class="section-title education-title">Education</h2>
+            <h3 class="education-item">Belarusian state technological university <br> Organic Substances Technology Faculty</h3>
+        </section>
+
+        <section class="section languages-section" id="languages">
+            <h2 class="section-title languages-title">Languages:</h2>
+            <ul class="languages-list">
+                <li class="language-item">English (A2 Pre-Intermediate)</li>
+                <li class="language-item">Belarusian (Native)</li>
+                <li class="language-item">Russian (Native)</li>
             </ul>
         </section>
     </main>
+
+    <footer class="footer">
+        <div class="github-footer" onclick="window.open('https://github.com/matveev96', '_blank')">
+            <h3 class="name-footer">A.Matsveyeu</h3>
+        </div>
+
+        <div class="year-footer">2024</div>
+
+        <div class="rs-footer" onclick="window.open('https://rs.school/courses/javascript-ru', '_blank')">
+            <img src="./assets/svg/rs_school.svg" alt="rs-school">
+        </div>
+    </footer>
 </body>
 </html>
