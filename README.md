@@ -1,2 +1,4 @@
-https://matveev96.github.io/rsschool-cv/cv
-https://matveev96.github.io/rsschool-cv/
+## Markdown CV:
+**https://matveev96.github.io/rsschool-cv/cv**
+## HTML CV:
+**https://matveev96.github.io/rsschool-cv/**
