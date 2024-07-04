@@ -253,11 +253,6 @@ body {
     margin-left: 40px;
     padding-top: 40px;
 
-    line-height: 2.2em;
-    letter-spacing: 1.5px;
-    color: black;
-    list-style: none;
-
     background-color: #FFFFFF;
     border-radius: 20px;
     border: 2px solid black;
@@ -273,6 +268,19 @@ body {
     font-style: normal;
     font-weight: 800;
     letter-spacing: 1px;
+}
+
+.contact-link {
+    text-decoration: none;
+    line-height: 2.2em;
+    letter-spacing: 1.5px;
+    color: black;
+    list-style: none;
+    transition: 0.3s;
+}
+
+.contact-link:hover {
+    color: #EA759F;
 }
 
 .telegram-item {
@@ -488,6 +496,10 @@ body {
 
     background-color: black;
     border-radius: 20px;
+
+    border-radius: 20px;
+    border: 2px solid black;
+    box-shadow: 10px 10px #ff9933;
 
 }
 
@@ -776,3 +788,117 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+@media (max-width: 1200px) {
+
+    .header {
+        width: 100%;
+    }
+
+    .name-title::after {
+        position: absolute;
+        content: "";
+        background-image: url(./assets/svg/sun.svg);
+        width: 300px;
+        height: 300px;
+        z-index: -1;
+        margin-left: -300px;
+        margin-top: -350px;
+    }
+
+    .section {
+        width: 100%;
+        margin: 20px 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contacts-section:hover {
+        transform: none;
+    }
+
+    .skills-section:hover {
+        transform: none;
+    }
+
+    .skills-list {
+        padding: 0;
+    }
+
+    .skills-item {
+        justify-content: center;
+    }
+
+    .courses-section:hover {
+        transform: none;
+    }
+
+    .courses-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contacts-list {
+        padding-left: 250px;
+
+    }
+
+    .section-title {
+        margin: 0;
+    }
+
+    .summary-section {
+        flex-direction: column;
+    }
+
+    .contacts-list, .skills-list, .courses-list {
+        width: 650px;
+    }
+
+    .code-title, .projects-title {
+        margin-bottom: 15px;
+    }
+
+    .languages-list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .summary-paragraph {
+        max-width: 600px;
+    }
+
+    .skills-list, .courses-list {
+        padding-top: 50px;
+    }
+
+    .contacts-list, .skills-list, .courses-list {
+        margin-left: 0;
+    }
+
+    .courses-list {
+        height: 420px;
+    }
+
+    .footer {
+        justify-content: space-between;
+        margin: 50px 20px 0 20px;
+    }
+
+    .github-footer {
+        flex-basis: 200px;
+    }
+
+    .rs-footer {
+        flex-basis: 200px;
+    }
+
+    .rs-footer img {
+        height: 50px;
+    }
+
+    .year-footer {
+        margin: 10px 0;
+    }
+  }
